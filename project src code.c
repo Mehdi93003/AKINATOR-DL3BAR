@@ -14,7 +14,8 @@ jump:
     if(random_num%2!=0){
         ++random_num;
     }
-
+    
+    printf(" ------------------------------------------------------------------------------\n");
     printf("\t\t\a*WELCOME BACK TO MY SECOND GREAT PROJECT*\n\n");
     printf("\t\t     %c AKINATOR DL3BAR  V0.01 Beta %c\n\n",sign_1,sign_2);
 
@@ -44,12 +45,12 @@ jump:
     printf("\t\t     (TLEB TSLIM MN MALIN LMKAN!!)\n\n\n");
 
     ask=NULL;
+    
   while(ask!=89 && ask!=121 && ask!=78 && ask!=110){
 
         printf("* Try Again ?  [YES] : Y , [NO] : N --> ");
         scanf(" %c",&ask);
         printf("\n\n");
-        printf(" ------------------------------------------------------------------------------\n");
 
         if (ask == 89 || ask == 121){
             goto jump;
